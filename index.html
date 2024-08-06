@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Registro de Mascota</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Registro de Mascota</h2>
+        <form id="mascota-form">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">Información del Cliente</div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="nombre">Nombres</label>
+                                <input type="text" class="form-control" id="txt_nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="txt_email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Nº de teléfono</label>
+                                <input type="tel" class="form-control" id="txt_telefono" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="direccion">Dirección</label>
+                                <input type="text" class="form-control" id="txt_direccion" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">Información de la Mascota</div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="nombre_mascota">Nombre de Mascota</label>
+                                <input type="text" class="form-control" id="txt_nombre_mascota" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tipo_mascota">Tipo de Mascota</label>
+                                <input type="text" class="form-control" id="txt_tipo_mascota" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="raza">Raza</label>
+                                <input type="text" class="form-control" id="txt_raza" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="edad">Edad</label>
+                                <input type="number" class="form-control" id="txt_edad" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="btn_guardar" class="btn btn-danger mt-3">Guardar</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
